@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.isEnumerablePropertyIn;
+})();
 })();
 </script>
 ```
@@ -146,6 +148,7 @@ bool = isEnumerablePropertyIn( obj, 'boop' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var bool = isEnumerablePropertyIn( { 'a': 'b' }, 'a' );
 // returns true
@@ -174,6 +177,7 @@ bool = isEnumerablePropertyIn( null, 'a' );
 bool = isEnumerablePropertyIn( void 0, 'a' );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -273,15 +277,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-configurable-property-in]: https://github.com/stdlib-js/assert-is-configurable-property-in/tree/umd
+[@stdlib/assert/is-configurable-property-in]: https://github.com/stdlib-js/assert-is-configurable-property-in/tree/umd/tree/umd
 
-[@stdlib/assert/is-enumerable-property]: https://github.com/stdlib-js/assert-is-enumerable-property/tree/umd
+[@stdlib/assert/is-enumerable-property]: https://github.com/stdlib-js/assert-is-enumerable-property/tree/umd/tree/umd
 
-[@stdlib/assert/is-nonenumerable-property-in]: https://github.com/stdlib-js/assert-is-nonenumerable-property-in/tree/umd
+[@stdlib/assert/is-nonenumerable-property-in]: https://github.com/stdlib-js/assert-is-nonenumerable-property-in/tree/umd/tree/umd
 
-[@stdlib/assert/is-readable-property-in]: https://github.com/stdlib-js/assert-is-readable-property-in/tree/umd
+[@stdlib/assert/is-readable-property-in]: https://github.com/stdlib-js/assert-is-readable-property-in/tree/umd/tree/umd
 
-[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in/tree/umd
+[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
