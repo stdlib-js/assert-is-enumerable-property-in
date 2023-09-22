@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isEnumerablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@esm/index.mjs';
+import isEnumerablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@v0.1.0-esm/index.mjs';
 ```
 
 #### isEnumerablePropertyIn( value, property )
@@ -132,7 +132,7 @@ bool = isEnumerablePropertyIn( obj, 'boop' );
 <body>
 <script type="module">
 
-import isEnumerablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@esm/index.mjs';
+import isEnumerablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@v0.1.0-esm/index.mjs';
 
 var bool = isEnumerablePropertyIn( { 'a': 'b' }, 'a' );
 // returns true
