@@ -35,38 +35,32 @@ limitations under the License.
 
 > Test if an object's own or inherited property is enumerable.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-enumerable-property-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isEnumerablePropertyIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isEnumerablePropertyIn = require( 'path/to/vendor/umd/assert-is-enumerable-property-in/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isEnumerablePropertyIn;
-})();
-</script>
+var isEnumerablePropertyIn = require( '@stdlib/assert-is-enumerable-property-in' );
 ```
 
 #### isEnumerablePropertyIn( value, property )
@@ -150,13 +144,8 @@ bool = isEnumerablePropertyIn( obj, 'boop' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-enumerable-property-in@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isEnumerablePropertyIn = require( '@stdlib/assert-is-enumerable-property-in' );
 
 var bool = isEnumerablePropertyIn( { 'a': 'b' }, 'a' );
 // returns true
@@ -184,11 +173,6 @@ bool = isEnumerablePropertyIn( null, 'a' );
 
 bool = isEnumerablePropertyIn( void 0, 'a' );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -287,15 +271,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-configurable-property-in]: https://github.com/stdlib-js/assert-is-configurable-property-in/tree/umd
+[@stdlib/assert/is-configurable-property-in]: https://github.com/stdlib-js/assert-is-configurable-property-in
 
-[@stdlib/assert/is-enumerable-property]: https://github.com/stdlib-js/assert-is-enumerable-property/tree/umd
+[@stdlib/assert/is-enumerable-property]: https://github.com/stdlib-js/assert-is-enumerable-property
 
-[@stdlib/assert/is-nonenumerable-property-in]: https://github.com/stdlib-js/assert-is-nonenumerable-property-in/tree/umd
+[@stdlib/assert/is-nonenumerable-property-in]: https://github.com/stdlib-js/assert-is-nonenumerable-property-in
 
-[@stdlib/assert/is-readable-property-in]: https://github.com/stdlib-js/assert-is-readable-property-in/tree/umd
+[@stdlib/assert/is-readable-property-in]: https://github.com/stdlib-js/assert-is-readable-property-in
 
-[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in/tree/umd
+[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in
 
 <!-- </related-links> -->
 
